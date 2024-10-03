@@ -17,7 +17,7 @@ test('chrome.omnibox.onInputChanged.addListener', () => {
     true
   );
   chrome.omnibox.onInputChanged.addListener(() => {});
-  expect(chrome.omnibox.onInputStarted.addListener).toBeCalled();
+  expect(chrome.omnibox.onInputChanged.addListener).toBeCalled();
 });
 
 test('chrome.omnibox.onInputEntered.addListener', () => {
